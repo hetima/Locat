@@ -6,7 +6,7 @@
 
 ドラッグ＆ドロップで行っていたことをホットキー一発で出来るようになります。  
 この SIMBL プラグインは、Finder を含むすべてのアプリケーションおよび com.apple.appkit.xpc.openAndSavePanelService で読み込まれます。  
-OS X 10.10 で動作確認。10.9 でも動くと思われるけれど。
+OS X 10.10.3 ＆ [EasySIMBL](https://github.com/norio-nomura/EasySIMBL) で動作確認。10.9 でも動くと思われるけれど。
 
 [動作デモ動画](https://www.youtube.com/watch?v=V0tRi5RQ7so)  
 
