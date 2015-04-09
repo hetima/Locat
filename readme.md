@@ -1,8 +1,8 @@
 # Locat
 
-これは Open/Save ダイアログと Finder の連携を強化する SIMBL プラグインです。
+これは Open/Save パネルと Finder の連携を強化する SIMBL プラグインです。
 
-任意のアプリケーションで Open/Save ダイアログが表示されている間に、Finder で `option + return(or enter)` を押すと、選択している項目を Open/Save ダイアログに反映させます。`shift + return` だと選択項目を無視して、ウインドウタイトルに表示されている場所（いわゆる target）を使用します。
+任意のアプリケーションで Open/Save パネルが表示されている間に、Finder で `option + return(or enter)` を押すと、選択している項目を Open/Save パネルに反映させます。`shift + return` だと選択項目を無視して、ウインドウタイトルに表示されている場所（いわゆる target）を使用します。
 
 ドラッグ＆ドロップで行っていたことをホットキー一発で出来るようになります。  
 この SIMBL プラグインは、Finder を含むすべてのアプリケーションおよび com.apple.appkit.xpc.openAndSavePanelService で読み込まれます。  
