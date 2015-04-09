@@ -9,10 +9,9 @@
 OS X 10.10 で動作確認。10.9 でも動くと思われるけれど。
 
 [動作デモ動画](https://www.youtube.com/watch?v=V0tRi5RQ7so)  
-<iframe width="640" height="360" src="https://www.youtube.com/embed/V0tRi5RQ7so" frameborder="0" allowfullscreen></iframe>
 
 # Download
-
+[Locat0.1.zip](https://github.com/hetima/Locat/releases/download/0.1/Locat0.1.zip)
 
 # Author
 http://hetima.com/  
