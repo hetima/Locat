@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA8A02301AD3F58400F5116A /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA8A022F1AD3F58400F5116A /* AppKit.framework */; };
+		AA8A02321AD3F58400F5116A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA8A02311AD3F58400F5116A /* Foundation.framework */; };
+		AA8A023A1AD3F58400F5116A /* LPELocat.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8A02391AD3F58400F5116A /* LPELocat.m */; };
+		AA8A02471AD3F5DD00F5116A /* LPEOpenSavePanelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8A02461AD3F5DD00F5116A /* LPEOpenSavePanelManager.m */; };
+		AA8A024A1AD3F7FB00F5116A /* LPEFinderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8A02491AD3F7FB00F5116A /* LPEFinderManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA8A022C1AD3F58400F5116A /* Locat.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Locat.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA8A022F1AD3F58400F5116A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		AA8A02311AD3F58400F5116A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AA8A02351AD3F58400F5116A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
+		AA8A02361AD3F58400F5116A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA8A02371AD3F58400F5116A /* Locat-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Locat-Prefix.pch"; sourceTree = "<group>"; };
+		AA8A02381AD3F58400F5116A /* LPELocat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPELocat.h; sourceTree = "<group>"; };
+		AA8A02391AD3F58400F5116A /* LPELocat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPELocat.m; sourceTree = "<group>"; };
+		AA8A02401AD3F59B00F5116A /* External.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = External.h; sourceTree = "<group>"; };
+		AA8A02411AD3F5A900F5116A /* DesktopServicesPriv.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DesktopServicesPriv.framework; path = ../../../../../../System/Library/PrivateFrameworks/DesktopServicesPriv.framework; sourceTree = "<group>"; };
+		AA8A02431AD3F5B800F5116A /* FinderKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FinderKit.framework; path = ../../../../../../System/Library/PrivateFrameworks/FinderKit.framework; sourceTree = "<group>"; };
+		AA8A02451AD3F5DD00F5116A /* LPEOpenSavePanelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPEOpenSavePanelManager.h; sourceTree = "<group>"; };
+		AA8A02461AD3F5DD00F5116A /* LPEOpenSavePanelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPEOpenSavePanelManager.m; sourceTree = "<group>"; };
+		AA8A02481AD3F7FB00F5116A /* LPEFinderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPEFinderManager.h; sourceTree = "<group>"; };
+		AA8A02491AD3F7FB00F5116A /* LPEFinderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPEFinderManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA8A02291AD3F58400F5116A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA8A02301AD3F58400F5116A /* AppKit.framework in Frameworks */,
+				AA8A02321AD3F58400F5116A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA8A02231AD3F58300F5116A = {
+			isa = PBXGroup;
+			children = (
+				AA8A02331AD3F58400F5116A /* Locat */,
+				AA8A022E1AD3F58400F5116A /* Frameworks */,
+				AA8A022D1AD3F58400F5116A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA8A022D1AD3F58400F5116A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA8A022C1AD3F58400F5116A /* Locat.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA8A022E1AD3F58400F5116A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA8A02431AD3F5B800F5116A /* FinderKit.framework */,
+				AA8A02411AD3F5A900F5116A /* DesktopServicesPriv.framework */,
+				AA8A022F1AD3F58400F5116A /* AppKit.framework */,
+				AA8A02311AD3F58400F5116A /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA8A02331AD3F58400F5116A /* Locat */ = {
+			isa = PBXGroup;
+			children = (
+				AA8A02401AD3F59B00F5116A /* External.h */,
+				AA8A02381AD3F58400F5116A /* LPELocat.h */,
+				AA8A02391AD3F58400F5116A /* LPELocat.m */,
+				AA8A02451AD3F5DD00F5116A /* LPEOpenSavePanelManager.h */,
+				AA8A02461AD3F5DD00F5116A /* LPEOpenSavePanelManager.m */,
+				AA8A02481AD3F7FB00F5116A /* LPEFinderManager.h */,
+				AA8A02491AD3F7FB00F5116A /* LPEFinderManager.m */,
+				AA8A02341AD3F58400F5116A /* Supporting Files */,
+			);
+			path = Locat;
+			sourceTree = "<group>";
+		};
+		AA8A02341AD3F58400F5116A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA8A02351AD3F58400F5116A /* .gitignore */,
+				AA8A02361AD3F58400F5116A /* Info.plist */,
+				AA8A02371AD3F58400F5116A /* Locat-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA8A022B1AD3F58400F5116A /* Locat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA8A023D1AD3F58400F5116A /* Build configuration list for PBXNativeTarget "Locat" */;
+			buildPhases = (
+				AA8A02281AD3F58400F5116A /* Sources */,
+				AA8A02291AD3F58400F5116A /* Frameworks */,
+				AA8A022A1AD3F58400F5116A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Locat;
+			productName = Locat;
+			productReference = AA8A022C1AD3F58400F5116A /* Locat.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA8A02241AD3F58400F5116A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LPE;
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = hetima;
+				TargetAttributes = {
+					AA8A022B1AD3F58400F5116A = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = AA8A02271AD3F58400F5116A /* Build configuration list for PBXProject "Locat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AA8A02231AD3F58300F5116A;
+			productRefGroup = AA8A022D1AD3F58400F5116A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA8A022B1AD3F58400F5116A /* Locat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA8A022A1AD3F58400F5116A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA8A02281AD3F58400F5116A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA8A023A1AD3F58400F5116A /* LPELocat.m in Sources */,
+				AA8A024A1AD3F7FB00F5116A /* LPEFinderManager.m in Sources */,
+				AA8A02471AD3F5DD00F5116A /* LPEOpenSavePanelManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA8A023B1AD3F58400F5116A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AA8A023C1AD3F58400F5116A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AA8A023E1AD3F58400F5116A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Locat/Locat-Prefix.pch";
+				INFOPLIST_FILE = Locat/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/SIMBL/Plugins";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		AA8A023F1AD3F58400F5116A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Locat/Locat-Prefix.pch";
+				INFOPLIST_FILE = Locat/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/SIMBL/Plugins";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA8A02271AD3F58400F5116A /* Build configuration list for PBXProject "Locat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA8A023B1AD3F58400F5116A /* Debug */,
+				AA8A023C1AD3F58400F5116A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA8A023D1AD3F58400F5116A /* Build configuration list for PBXNativeTarget "Locat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA8A023E1AD3F58400F5116A /* Debug */,
+				AA8A023F1AD3F58400F5116A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA8A02241AD3F58400F5116A /* Project object */;
+}
