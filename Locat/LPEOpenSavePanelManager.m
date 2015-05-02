@@ -82,8 +82,27 @@
             call(slf, sel);
             //orderWindow:relativeTo: では完全じゃないのでここで
             [self panelDidAppear:slf];
+            
+            //probably FinderKit was loaded
+            static dispatch_once_t onceToken;
+            dispatch_once(&onceToken, ^{
+                //select popup with cmd-key
+                KZRMETHOD_SWIZZLING_("FILocationPopUp", "retargetFromMenuItem:", void, call, sel)
+                ^(id slf, id arg1)
+                {
+                    id delegate=[slf delegate];
+                    if ([[delegate className]isEqualToString:@"FIFinderViewGutsController"]) {
+                        if ([self interceptLocationPopUp:slf item:arg1]) {
+                            return;
+                        }
+                    }
+                    call(slf, sel, arg1);
+                    
+                }_WITHBLOCK;
+            });
+            
         }_WITHBLOCK;
-       
+        
     }
     return self;
 }
@@ -168,6 +187,32 @@
     
     [app activateWithOptions:(/*NSApplicationActivateAllWindows |*/ NSApplicationActivateIgnoringOtherApps)];
     
+}
+
+
+- (BOOL)interceptLocationPopUp:(id)locationPopUp item:(NSMenuItem*)item
+{
+    NSEvent* event=[NSApp currentEvent];
+    NSEventModifierFlags flag=[event modifierFlags];
+    //select popup with cmd-key
+    if ((flag & NSDeviceIndependentModifierFlagsMask)==NSCommandKeyMask) {
+        id nodeObj=[item representedObject];
+        SEL slctr=NSSelectorFromString(@"previewItemURL");
+        if (![[nodeObj className]isEqualToString:@"FITNode"] || ![nodeObj respondsToSelector:slctr]) {
+            return NO;
+        }
+        NSURL *result=((NSURL *(*)(id, SEL, ...))objc_msgSend)(nodeObj, slctr);
+        NSString* path=[result path];
+        BOOL isDir=NO;
+        [[NSFileManager defaultManager]fileExistsAtPath:path isDirectory:&isDir];
+        if (isDir) {
+            [[NSWorkspace sharedWorkspace]selectFile:nil inFileViewerRootedAtPath:[result path]];
+            [locationPopUp selectItemAtIndex:0];
+            return YES;
+        }
+    }
+    
+    return NO;
 }
 
 @end
